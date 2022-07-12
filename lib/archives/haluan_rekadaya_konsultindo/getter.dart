@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 class Recipes {
   String cheese;
   String bun;
@@ -10,4 +12,9 @@ class Recipes {
   }
 
   String get cheeseBurger => giveMeCheeseBurger();
+}
+
+void main() {
+  var recipe = Recipes('cheese', 'bun', 'meat');
+  debugPrint(recipe.cheeseBurger.toString());
 }
